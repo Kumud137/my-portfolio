@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Kumudani Boharpi | Frontend Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Kumudani Boharpi, an aspiring Frontend Developer building responsive, user-friendly websites."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="progress" id="progress"></div>
+
+    <header class="navbar" id="navbar">
+      <div class="container nav-inner">
+        <a href="#home" class="logo">Kumudani<span>.</span></a>
+        <nav>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">
+            &#9680;
+          </button>
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="hello">Hi, I’m</p>
+            <h1>Kumudani Boharpi</h1>
+            <h2>Frontend Developer</h2>
+            <p class="typing">
+              I love building <span id="typed"></span
+              ><span class="cursor">|</span>
+            </p>
+            <p class="subtitle">
+              Aspiring Frontend Developer passionate about creating beautiful,
+              responsive and user-friendly web experiences.
+            </p>
+            <div class="btn-row">
+              <a href="#projects" class="btn btn-primary">View My Projects</a>
+              <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-visual" id="heroVisual">
+            <span class="blob blob-a"></span><span class="blob blob-b"></span>
+            <img
+              class="avatar"
+              id="avatar"
+              src="profile picture.jpg"
+              alt="Portrait of Kumudani Boharpi"
+            />
+            <span class="chip chip-1">HTML5</span>
+            <span class="chip chip-2">CSS3</span>
+            <span class="chip chip-3">JavaScript</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container narrow reveal">
+          <h2 class="section-title">About Me</h2>
+          <p>
+            I’m a Computer Science Engineering student with a growing interest
+            in frontend development and web design. I enjoy turning ideas into
+            clean, responsive pages that are easy to use.
+          </p>
+          <p>
+            I learn best by building practical projects, so I keep creating
+            websites and strengthening my HTML, CSS and JavaScript. I’m looking
+            for an internship where I can keep learning and contribute to real
+            frontend work.
+          </p>
+          <ul class="stats">
+            <li>
+              <b class="count" data-to="2">0</b><span>Projects built</span>
+            </li>
+            <li><b class="count" data-to="8">0</b><span>Skills</span></li>
+            <li>
+              <b class="count" data-to="3">0</b
+              ><span>Core web technologies</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section alt" id="skills">
+        <div class="container">
+          <h2 class="section-title center reveal">Skills</h2>
+          <div class="filters reveal" id="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="web">Web</button>
+            <button class="filter" data-filter="code">Programming</button>
+            <button class="filter" data-filter="tools">Tools</button>
+          </div>
+          <ul class="skills-grid" id="skillsGrid">
+            <li class="card skill reveal" data-cat="web">
+              <span class="icon">&lt;/&gt;</span>
+              <h3>HTML5</h3>
+              <p>Structure and meaning of web pages.</p>
+            </li>
+            <li class="card skill reveal" data-cat="web">
+              <span class="icon">{ }</span>
+              <h3>CSS3</h3>
+              <p>Layouts, colours and animations.</p>
+            </li>
+            <li class="card skill reveal" data-cat="web">
+              <span class="icon">JS</span>
+              <h3>JavaScript</h3>
+              <p>Makes pages interactive.</p>
+            </li>
+            <li class="card skill reveal" data-cat="code">
+              <span class="icon">C</span>
+              <h3>C</h3>
+              <p>Programming fundamentals.</p>
+            </li>
+            <li class="card skill reveal" data-cat="code">
+              <span class="icon">C++</span>
+              <h3>C++</h3>
+              <p>Object-oriented programming.</p>
+            </li>
+            <li class="card skill reveal" data-cat="tools">
+              <span class="icon">&#9095;</span>
+              <h3>Git</h3>
+              <p>Tracks changes in code.</p>
+            </li>
+            <li class="card skill reveal" data-cat="tools">
+              <span class="icon">GH</span>
+              <h3>GitHub</h3>
+              <p>Hosts and shares projects.</p>
+            </li>
+            <li class="card skill reveal" data-cat="web">
+              <span class="icon">&#9707;</span>
+              <h3>Responsive Design</h3>
+              <p>Looks right on every screen.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects">
+        <div class="container">
+          <h2 class="section-title center reveal">Projects</h2>
+          <div class="projects-grid">
+            <article class="card project tilt reveal">
+              <div class="thumb thumb-mall">
+                <img class="proj-img" src="mall-mate.png" alt="mall-mate project screenshot" />
+              </div>
+              <div class="project-body">
+                <h3>MallMate</h3>
+                <p>
+                  A mall shopping assistant website that helps users explore
+                  stores, discover offers, navigate mall sections and find
+                  dining options.
+                </p>
+                <ul class="tags">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="btn-row">
+                  <a href=" https://kumud137.github.io/mall-mate/" target="_blank"  rel="noopener"  class="btn btn-primary btn-sm">Live Demo</a>
+                  <a href= "https://github.com/Kumud137/mall-mate"   target="_blank"  rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project tilt reveal">
+              <div class="thumb thumb-cafe">
+                <img class="proj-img"  src="cozy-corner.png" alt="cozy-corner-cafe screenshot" />
+              </div>
+              <div class="project-body">
+                <h3>MyCafe</h3>
+                <p>
+                  A coffee shop website featuring an attractive interface, cafe
+                  information, menu and visually appealing sections.
+                </p>
+                <ul class="tags">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="btn-row">
+                  <a href=" https://kumud137.github.io/cozy-corner-cafe/" target="_blank"  rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+                  <a href="https://github.com/Kumud137/cozy-corner-cafe"target="_blank"  rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="section alt" id="education">
+        <div class="container narrow reveal">
+          <h2 class="section-title">Education</h2>
+          <div class="card edu">
+            <h3>Bachelor of Technology (B.Tech)</h3>
+            <p class="edu-field">Computer Science Engineering</p>
+            <p class="muted">
+              Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV), Bhopal
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container narrow center reveal">
+          <h2 class="section-title center">
+            Let’s Connect and Build Something Great!
+          </h2>
+          <p class="muted">
+            I’m open to frontend internship opportunities. Feel free to reach
+            out.
+          </p>
+          <ul class="contact-list">
+            <li class="card">
+              <span>Email</span
+              ><a href="mailto:kumud8349@gmail.com" id="emailText"
+                >kumud8349@gmail.com</a
+              >
+            </li>
+            <li class="card">
+              <span>LinkedIn</span
+              ><a
+                href="https://www.linkedin.com/in/kumud-boharpi9a6051379"
+                target="_blank"
+                rel="noopener"
+                >linkedin.com/in/kumud-boharpi9a6051379</a
+              >
+            </li>
+            <li class="card">
+              <span>GitHub</span
+              ><a
+                href="https://github.com/Kumud137"
+                target="_blank"
+                rel="noopener"
+                >github.com/Kumud137</a
+              >
+            </li>
+          </ul>
+          <div class="btn-row center-row">
+            <a href="mailto:your.email@example.com" class="btn btn-primary"
+              >Send Me an Email</a
+            >
+            <button class="btn btn-outline" id="copyBtn">Copy Email</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>Kumudani Boharpi</strong>
+          <p>Frontend Developer</p>
+        </div>
+        <ul class="social">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/your-profile"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/Kumud137" target="_blank" rel="noopener"
+              >GitHub</a
+            >
+          </li>
+          <li><a href="mailto:your.email@example.com">Email</a></li>
+        </ul>
+        <p class="copy">
+          &copy; <span id="year">2026</span> Kumudani Boharpi. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Back to top">&uarr;</button>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
